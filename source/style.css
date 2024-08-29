@@ -1,27 +1,36 @@
-.label {
-    /* add style rules here to change how the label appears */
-    margin: .75rem 0;
+.plugin-container {
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-.hint {
-    /* add style rules here to change how the hint appears */
-    margin: .5rem 0;
-    color: rgba(0,0,0,.65);
+#label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#hint {
     font-style: italic;
+    margin-bottom: 10px;
+    color: #666;
 }
 
-.response {
-    /* add style rules here to change how the response appears */
-    width: 100%;
-    margin: .5rem 0;
-    padding: .5rem;
-    border: 1px solid #047CC2;
-    box-sizing: border-box;
+#qr-code {
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
 }
 
-.is-read-only .response {
-    /* this affects how the input appears when the field is marked read only */
-    outline: none;
-    background-color: rgba(0,0,0,.07);
-    border: 1px solid rgba(0,0,0,.3);
+#qr-code img {
+    max-width: 100%;
+    height: auto;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
 }
