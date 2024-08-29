@@ -8,7 +8,7 @@ A field plug-in for encoding data as a scannable QR code. Use this field plug-in
 
 **Note:** This field plug-in was created using [Claud.ai](https://claude.ai/) by a non-developer.
 
-[![Download now](extras/download-button.png)](https://github.com/surveycto/baseline-text/raw/master/baseline-text.fieldplugin.zip)
+[![Download now](extras/download-button.png)](https://github.com/surveycto/qr-code/raw/master/baseline-text.fieldplugin.zip)
 
 ### Features
 
@@ -31,8 +31,8 @@ Not applicable. This field plug-in does not collect data.
 
 *To use this field plug-in as is:*
 
-1. Download the sample form from this repo.
-2. Download the qr-code.plug-in.zip file from this repo.
+1. Download the [sample form](https://github.com/surveycto/qr-code/raw/master/extras/Sample%20form%20-%20QR%20code%20field%20plug-in.xlsx) from this repo.
+2. Download the [qr-code.plug-in.zip](https://github.com/surveycto/qr-code/raw/master/baseline-text.fieldplugin.zip) file from this repo.
 3. Deploy the sample form with the field plug-in as an optional media attachment.
 
 ### Parameters
@@ -58,11 +58,6 @@ Not applicable. This field plug-in does not collect data.
 | `numbers_phone` appearance | NA |
 
 ## More resources
-
-* **Test form**  
-This form will help you explore the differences between this field plug-in and the default text field.  
-[Download test form package](https://github.com/surveycto/baseline-text/raw/master/extras/test-form/test-form-package.zip)  
-[Instructions for test form](/extras/test-form/README.md)
 
 * **Developer documentation**  
 Instructions and resources for developing your own field plug-ins.  
