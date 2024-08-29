@@ -1,6 +1,6 @@
 # QR Code
 
-![Default appearance for the 'baseline-text' field plug-in](extras/preview.jpg)
+![Default appearance for the 'baseline-text' field plug-in](extras/preview.png)
 
 ## Description
 
