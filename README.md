@@ -1,67 +1,61 @@
-# Baseline text field
+# QR Code
 
 ![Default appearance for the 'baseline-text' field plug-in](extras/preview.jpg)
 
 ## Description
 
-A simple replacement for the default *text* field, plus a few improvements (see below). You can either download and use this as-is, or you can use it as a starting template when creating your own field plug-in for a *text* field.
+A field plug-in for encoding data as a scannable QR code. Use this field plug-in to encode and transfer data to open forms in SurveyCTO Collect on other devices using the [*barcode* field type](https://docs.surveycto.com/02-designing-forms/01-core-concepts/03k.field-types-barcode.html). This field plug-in works with the [*text*](https://docs.surveycto.com/02-designing-forms/01-core-concepts/03a.field-types-text.html) field type.
 
 [![Download now](extras/download-button.png)](https://github.com/surveycto/baseline-text/raw/master/baseline-text.fieldplugin.zip)
 
 ### Features
 
-In addition to supporting the default SurveyCTO features listed below, this field plug-in offers the following expanded functionality:
+This field plug-in has the following features:
 
-1. **Support for HTML in field references** <br>
-    If you reference another field's value in either the field *label* or field *hint*, and that referenced value contains HTML, the HTML will be correctly rendered.
-1. **Better support for RTL languages** <br>
-    The field label, hint, and input will now be justified to the right when they contain an RTL language.
+1. **Encode data as a QR code** <be>
+    Supply either a static or dynamic value as the code to display as a QR code.
+2. **Display an error if not configured correctly**
+    If no value is supplied, a helpful error is shown, alerting the form tester that the field plug-in has not been correctly configured.
 
 ### Data format
 
-This field plug-in requires the `text` field type.
+Not applicable. This field plug-in does not collect data.
+
+**Warning:** For this reason, never make a *text* field with this field plug-in applied *required* in a form design.
 
 ## How to use
 
 ### Getting started
 
-**To use this plug-in as-is**, just download the [baseline-text.fieldplugin.zip](https://github.com/surveycto/baseline-text/raw/master/baseline-text.fieldplugin.zip) file from this repo, specify this field plug-in as a custom field appearance in the form design (like in the [test form](https://github.com/surveycto/baseline-text/raw/master/extras/test-form/test-form-package.zip)), and attach it to your form. For more details about using field plug-ins, please read the [user documentation](https://docs.surveycto.com/02-designing-forms/03-advanced-topics/06.using-field-plug-ins.html).
+To use this field plug-in:
 
-**To create your own** field plug-in using this as a template, follow these steps:
+*To use this field plug-in as is:*
 
-1. Fork this repo
-1. Make changes to the files in the `source` directory.  
-    * **Note:** be sure to update the `manifest.json` file as well.
-1. Zip the updated contents of the `source` directory.
-1. Rename the .zip file to *yourpluginname*.fieldplugin.zip (replace *yourpluginname* with the name you want to use for your plug-in).
-1. You may then attach your new .fieldplugin.zip file to your form as normal.
+1. Download the sample form from this repo.
+2. Download the qr-code.plug-in.zip file from this repo.
+3. Deploy the sample form with the field plug-in as an optional media attachment.
 
-For more information about developing your own field plug-ins, please read the [developer documentation](https://github.com/surveycto/Field-plug-in-resources).
+### Parameters
+
+| Name | Description |
+| --- | --- |
+| `code` | The value to be encoded as a QR code. You can specify a static value or use a field value reference (e.g. `${respondent_data}`) to supply a dynamic value. An error message will be displayed if no `code` value is supplied. |
 
 ### Default SurveyCTO feature support
 
 | Feature / Property | Support |
 | --- | --- |
 | Supported field type(s) | `text`|
-| Default values | Yes |
-| Constraint message | Uses default behavior |
-| Required message | Uses default behavior |
-| Read only | Yes *(shows the current value, if present)* |
-| media:image | Yes |
-| media:audio | Yes |
-| media:video | Yes |
-| `numbers` appearance | Yes |
-| `numbers_decimal` appearance | Yes |
-| `numbers_phone` appearance | Yes |
-
-### Parameters
-
-**Note about the `numbers_decimal` appearance on iOS:**  
-iOS has a less-consistent way of determining which on-screen keyboard to display than Android. If you are using this plug-in with the `numbers_decimal` appearance, you should test your form on the actual iOS device that you plan on using. If the wrong keyboard appears (for example, if there is no decimal button available), you may supply an optional parameter to the plug-in to set the keyboard type manually. 
-
-| Parameter key | Parameter value |
-| --- | --- |
-| `ios-inputmode` | Possible values: `none`, `text`, `decimal`, `numeric`, `tel`, `search`, `email`, `url`. [Click here for more information about the inputmode attribute.](https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode)|
+| Default values | No |
+| Constraint message | NA |
+| Required message | NA |
+| Read only | NA |
+| media:image | No |
+| media:audio | No |
+| media:video | No |
+| `numbers` appearance | NA |
+| `numbers_decimal` appearance | NA |
+| `numbers_phone` appearance | NA |
 
 ## More resources
 
