@@ -27,8 +27,6 @@ Not applicable. This field plug-in does not collect data.
 
 ### Getting started
 
-To use this field plug-in:
-
 *To use this field plug-in as is:*
 
 1. Download the sample form from this repo.
