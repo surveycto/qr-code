@@ -6,8 +6,6 @@
 
 A field plug-in for encoding data as a scannable QR code. Use this field plug-in to encode and transfer data to open forms in SurveyCTO Collect on other devices using the [*barcode* field type](https://docs.surveycto.com/02-designing-forms/01-core-concepts/03k.field-types-barcode.html). This field plug-in works with the [*text*](https://docs.surveycto.com/02-designing-forms/01-core-concepts/03a.field-types-text.html) field type.
 
-**Note:** This field plug-in was created using [Claude.ai](https://claude.ai/) by a non-developer.
-
 [![Download now](extras/download-button.png)](https://github.com/surveycto/qr-code/raw/master/baseline-text.fieldplugin.zip)
 
 ### Features
