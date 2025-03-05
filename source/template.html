@@ -2,17 +2,18 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Field Plug-in</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="plugin-container">
-        <div id="label"></div>
-        <div id="hint"></div>
+    <div class="label default-question-text-size" dir="auto" id="label"></div>
+    <div class="hint default-question-text-size" dir="auto" id="hint"></div>
+    <div class="qr-code-container">
         <div id="qr-code"></div>
-        <div id="error-message" class="error hidden">Error. No code supplied. You must supply a code value in the form's design to be rendered as a QR code.</div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <div id="error-message" class="error hidden">Error. No code supplied. You must supply a code value in the form's design to be rendered as a QR code.</div>
+    <script src="qrcode.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
