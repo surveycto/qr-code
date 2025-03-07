@@ -30,7 +30,7 @@ Not applicable. This field plug-in does not collect data.
 *To use this field plug-in as is:*
 
 1. Download the [sample form](https://github.com/surveycto/qr-code/raw/master/extras/Sample%20form%20-%20QR%20code%20field%20plug-in.xlsx) from this repository.
-2. Download the [qr-code.fieldplugin.zip](https://github.com/surveycto/qr-code/raw/master/baseline-text.fieldplugin.zip) file from this repository.
+2. Download the [qr-code.fieldplugin.zip](https://github.com/surveycto/qr-code/raw/refs/heads/master/qr-code.fieldplugin.zip) file from this repository.
 3. Deploy the sample form with the field plug-in as an optional media attachment.
 
 ### Parameters
